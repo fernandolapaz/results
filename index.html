@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frontend Mentor Challenge">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="images/favicon-32x32.png">
+  <title>Frontend Mentor | Results summary component</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+
+<body>
+  <header>
+    <button
+      class="theme"
+      aria-label="Theme switcher">
+      <img src="images/theme-moon.svg"
+        class="theme__icon" 
+        alt=""
+        width="64"
+        height="64">
+      <img src="images/theme-sun.svg"
+        class="theme__icon hidden"
+        alt=""
+        width="64"
+        height="64">
+    </button>
+  </header>
+
+  <main>
+    <!-- RESULT -->
+    <section class="result">
+      <h1 class="result__title">Your Result</h1>
+      <p class="result__score">
+        <!-- Calculated with JS -->
+        <strong id="result">?</strong>
+        of 100
+      </p>
+      <p class="result__message">
+        <strong>Great</strong>
+        You scored higher than 65% of the people
+        who have taken these tests.
+      </p>
+    </section>
+
+    <!-- SUMMARY -->
+    <section class="summary">
+      <h2 class="summary__title">Summary</h2>
+      <ul class="summary__breakdown">
+        <!-- Dynamically added content using local JSON data -->
+        <li class="summary__category"></li>
+        <li class="summary__category"></li>
+        <li class="summary__category"></li>
+        <li class="summary__category"></li>
+      </ul>
+      <button class="summary__btn">
+        Continue
+      </button>
+    </section>
+  </main>
+
+  <footer class="attribution">
+    <button
+      type="button"
+      class="attr__btn"
+      title="Show attribution information"
+      aria-label="Show attribution information"
+      aria-expanded="false">
+      <img src="images/icon-attr.svg"
+        alt=""
+        width="32"
+        height="32">
+    </button>
+    <p class="attr__info">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">
+        Frontend Mentor.</a><br>
+      Coded by
+      <a href="https://www.frontendmentor.io/profile/fernandolapaz"
+        title="Fernando's Frontend Mentor profile"
+        aria-label="Fernando's Frontend Mentor profile">
+        Fernando.</a>
+    </p>
+  </footer>
+</body>
+
+</html>
